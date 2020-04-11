@@ -37,6 +37,17 @@ public class RandomUtil {
 		
 	//TODO 实现代码
 	}
+	//方法3：返回length个1-9 (8分)
+		public static String randomNumber (int length){
+			String str="1234567890";
+			String result="";
+			for (int i = 0; i < length; i++) {
+				result+=str.charAt(random(0, str.length()-1));
+			}
+			return result;
+			
+		//TODO 实现代码
+		}
 	//方法4：返回参数length个字符串(5分)，方法内部要调用randomCharacter()方法 (4分)
 	public static String randomString(int length){
 		StringBuffer sBuffer = new StringBuffer();
